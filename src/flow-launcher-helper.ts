@@ -53,14 +53,11 @@ export interface JSONRPCResponse<TMethods> {
 }
 
 interface IFlow<TMethods, TSettings> {
-  method: Method<TMethods>;
-  params: string;
   settings: TSettings;
   on: (method: Method<TMethods>, callbackFn: () => void) => void;
   showResult: (...result: JSONRPCResponse<TMethods>[]) => void;
   run: () => void;
 }
-
 export class Flow<TMethods, TSettings = Record<string, string>>
   implements IFlow<TMethods, TSettings>
 {
@@ -83,22 +80,6 @@ export class Flow<TMethods, TSettings = Record<string, string>>
 
   /**
    * @readonly
-   * @type {keyof MethodsObj<TMethods>}
-   */
-  get method() {
-    return this.data.method;
-  }
-
-  /**
-   * @readonly
-   * @type {Parameters}
-   */
-  get params() {
-    return this.data.parameters[0] as string;
-  }
-
-  /**
-   * @readonly
    * @type {TSettings}
    */
   get settings() {
@@ -112,8 +93,8 @@ export class Flow<TMethods, TSettings = Record<string, string>>
    * @param {keyof MethodsObj<TMethods>} method
    * @param {() => void} callbackFn
    */
-  public on(method: keyof MethodsObj<TMethods>, callbackFn: () => void) {
-    this.methods[method] = callbackFn;
+  public on(method: keyof MethodsObj<TMethods>, callbackFn: (params: Parameters) => void) {
+    this.methods[method] = callbackFn.bind(this, this.data.parameters);
   }
 
   /**
