@@ -7,5 +7,6 @@
   "Version": "0.0.1",
   "Language": "executable",
   "ExecuteFileName": "./dist/plugin.exe",
+  "Website": "https://github.com/Joehoel/flow-launcher-plugin-template-deno",
   "IcoPath": "./assets/deno.png"
 }

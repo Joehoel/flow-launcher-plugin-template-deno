@@ -1,5 +1,4 @@
 {
-  "importMap": "./import_map.json",
   "tasks": {
     "build": "deno compile -A --output ./dist/plugin --target x86_64-pc-windows-msvc ./src/index.ts"
   }
