@@ -1,7 +1,5 @@
 {
   "imports": {
-    "dayjs": "https://cdn.skypack.dev/dayjs",
-    "dayjs/": "https://cdn.skypack.dev/dayjs/",
-    "ms": "https://cdn.skypack.dev/ms"
+    "open": "https://cdn.skypack.dev/open"
   }
 }

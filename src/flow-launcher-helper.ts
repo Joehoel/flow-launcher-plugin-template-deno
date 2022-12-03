@@ -91,7 +91,7 @@ export class Flow<TMethods, TSettings = Record<string, string>>
 
   /**
    * @readonly
-   * @type {string}
+   * @type {Parameters}
    */
   get params() {
     return this.data.parameters[0] as string;

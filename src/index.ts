@@ -1,18 +1,28 @@
-import { open } from "https://deno.land/x/opener@v1.0.1/mod.ts";
+import { open } from "https://deno.land/x/open@v0.0.5/index.ts";
 import { Flow } from "./flow-launcher-helper.ts";
 
-const { params, on, showResult } = new Flow("assets/app.png");
+const { params, on, showResult, run } = new Flow<"search">("assets/deno.png");
 
-showResult({
-  title: "Hello World Typescript",
-  subtitle: "Showing your query parameters: " + params + ". Click to open Flow's website",
-  method: "do_something_for_query",
-  iconPath: "assets/app.png",
-  score: 0,
+on("query", () => {
+  const qp = new URLSearchParams({
+    query: params,
+  });
+
+  const url = `https://deno.land/x?${qp}`;
+
+  showResult({
+    title: `Search Deno package: ${params}`,
+    subtitle: url,
+    method: "search",
+    params: [url],
+    iconPath: "assets/deno.png",
+  });
 });
 
-on("do_something_for_query", () => {
+on("search", () => {
   const url = params;
 
   open(url);
 });
+
+run();
