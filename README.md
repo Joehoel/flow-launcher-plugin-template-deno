@@ -4,7 +4,7 @@ This repository contains a template for creating a [Flow Launcher](https://www.f
 
 > **Warning**
 >
-> - Since this compiles to an executable, npm modules are not yet supported. See this thread for more information.
+> - Since this compiles to an executable, npm modules are not yet supported. See [this thread](https://github.com/denoland/deno/issues/15960) for more information.
 > - All packages should directly be imported from the url and not via an import_map.
 
 ## Development
