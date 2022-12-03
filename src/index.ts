@@ -3,6 +3,7 @@ import { Flow } from "./flow-launcher-helper.ts";
 
 const { params, on, showResult, run } = new Flow<"search">("assets/deno.png");
 
+// This is where the magic happens
 on("query", () => {
   const qp = new URLSearchParams({
     query: params,
