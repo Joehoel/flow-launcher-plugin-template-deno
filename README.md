@@ -11,7 +11,7 @@ This repository contains a template for creating a [Flow Launcher](https://www.f
 
 To be able to test this easily, you need to create a symlink between this directory and the plugin directory from Flow Launcher. This can be done by searching `Flow Launcher UserData Folder` in the launcher and pressing enter. The plugins are found in the `Plugins` folder.
 
-You can create a symlink by opening command prompt (CMD) in Windows and typing
+You can create a symlink by opening command prompt (CMD) in Windows and typing:
 
 ```CMD
 mklink /J [project-root] [flow-launcher-plugin-folder]/[folder-name]
@@ -23,7 +23,7 @@ An example would look like this:
 mklink /J C:\Users\Joel\code\flow-plugin C:\Users\Joel\AppData\Roaming\FlowLauncher\Plugins\flow-plugin
 ```
 
-After this is set up. You can run
+After this is set up. You can run:
 
 ```bash
 deno task build
