@@ -1,0 +1,11 @@
+{
+  "ID": "d91d366e4ff742b3b821f9d60031c3df",
+  "ActionKeyword": "deno",
+  "Name": "Search Deno",
+  "Description": "Search Deno documentation",
+  "Author": "Joël Kuijper",
+  "Version": "0.0.1",
+  "Language": "executable",
+  "ExecuteFileName": "run.bat",
+  "IcoPath": "assets/icon.png"
+}

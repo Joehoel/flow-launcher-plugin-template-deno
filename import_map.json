@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "flow-launcher-helper": "npm:flow-launcher-helper@^2.1.0"
+  }
+}
