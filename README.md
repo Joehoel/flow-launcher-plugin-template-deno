@@ -1,6 +1,6 @@
 # Flow Launcher Plugin Template for Deno
 
-This repository contains a template for creating a Flow Launcher plugin using the Deno runtime.
+This repository contains a template for creating a [Flow Launcher](https://www.flowlauncher.com/) plugin using the [Deno](https://deno.land/1) runtime.
 
 > **Warning**
 >
@@ -35,3 +35,9 @@ To compile the code to and executable. Now **restart** Flow Launcher and the plu
 >
 > - You **don't** need to restart Flow Launcher every time you make a change.
 > - However, you do need to run the `build` command everytime you make a change. I hope this is not needed in the future but the `deno compile` command does't have a watch mode (yet).
+
+## Publishing
+
+When you want to release and publish a new version, just push to the `main` branch and it wil automatically create a new release and tag with the correct versions.
+
+To add the plugin to the official Flow Launcher plugin manifest, follow [this](https://github.com/Flow-Launcher/Flow.Launcher.PluginsManifest#readme) guide.
