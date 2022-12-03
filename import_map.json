@@ -1,5 +1,7 @@
 {
   "imports": {
-    "flow-launcher-helper": "npm:flow-launcher-helper@^2.1.0"
+    "dayjs": "https://cdn.skypack.dev/dayjs",
+    "dayjs/": "https://cdn.skypack.dev/dayjs/",
+    "ms": "https://cdn.skypack.dev/ms"
   }
 }
