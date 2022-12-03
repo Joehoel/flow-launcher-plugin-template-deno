@@ -1,6 +1,6 @@
 # Flow Launcher Plugin Template for Deno
 
-This repository contains a template for creating a [Flow Launcher](https://www.flowlauncher.com/) plugin using the [Deno](https://deno.land/1) runtime.
+This repository contains a template for creating a [Flow Launcher](https://www.flowlauncher.com/) plugin using the [Deno](https://deno.land/) runtime.
 
 > **Warning**
 >
