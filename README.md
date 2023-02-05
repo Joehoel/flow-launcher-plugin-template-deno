@@ -14,13 +14,13 @@ To be able to test this easily, you need to create a symlink between this direct
 You can create a symlink by opening command prompt (CMD) in Windows and typing:
 
 ```CMD
-mklink /J [project-root] [flow-launcher-plugin-folder]/[folder-name]
+mklink /J [flow-launcher-plugin-folder]/[folder-name] [project-root]
 ```
 
 An example would look like this:
 
 ```CMD
-mklink /J C:\Users\Joel\code\flow-plugin C:\Users\Joel\AppData\Roaming\FlowLauncher\Plugins\flow-plugin
+mklink /J C:\Users\Joel\AppData\Roaming\FlowLauncher\Plugins\flow-plugin C:\Users\Joel\code\flow-plugin
 ```
 
 After this is set up. You can run:
